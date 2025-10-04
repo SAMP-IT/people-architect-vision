@@ -1,6 +1,6 @@
 const ParentBrand = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="parent" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           {/* Title */}
