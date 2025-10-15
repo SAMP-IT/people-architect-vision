@@ -5,17 +5,17 @@ const ParentBrand = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           {/* Title */}
           <h2 className="font-heading text-3xl md:text-4xl font-bold">
-            A Venture by <span className="text-gradient">People Media</span>
+            A Venture by <span className="text-gradient">Peoples Media</span>
           </h2>
 
           {/* Content */}
           <p className="font-body text-lg text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-            Born from the creative spirit of <span className="text-primary font-semibold">People Media</span>, 
+            Born from the creative spirit of <span className="text-primary font-semibold">Peoples Media</span>, 
             People Architect extends the vision — empowering stories that build people, brands, and communities.
           </p>
 
           <blockquote className="font-quote italic text-2xl text-primary py-8">
-            "From the creators at People Media, we turn influence into awareness, 
+            "From the creators at Peoples Media, we turn influence into awareness, 
             creativity into social design."
           </blockquote>
 
@@ -25,7 +25,7 @@ const ParentBrand = () => {
               <div className="w-32 h-32 rounded-full bg-gradient-gold flex items-center justify-center mb-4 glow-gold">
                 <span className="font-heading text-2xl font-bold text-primary-foreground">PM</span>
               </div>
-              <p className="font-ui text-sm font-semibold text-muted-foreground">People Media</p>
+              <p className="font-ui text-sm font-semibold text-muted-foreground">Peoples Media</p>
             </div>
 
             {/* Connection Line */}

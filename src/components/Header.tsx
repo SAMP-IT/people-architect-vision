@@ -27,7 +27,7 @@ const Header = () => {
     { name: "About", id: "about" },
     { name: "Mission", id: "mission" },
     { name: "Showcase", id: "showcase" },
-    { name: "People Media", id: "parent" },
+    { name: "Peoples Media", id: "parent" },
   ];
 
   return (

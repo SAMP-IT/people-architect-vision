@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 People Architect. A venture by People Medi</p>
+            <p>© 2025 People Architect. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-gold"></div>
             <p className="font-body text-lg text-foreground/80 leading-relaxed">
-              People Architect is born from <span className="text-primary font-semibold">People Media's vision</span> to create media that matters.
+              People Architect is born from <span className="text-primary font-semibold">Peoples Media's vision</span> to create media that matters.
             </p>
             <p className="font-body text-lg text-foreground/80 leading-relaxed">
               We design platforms where voices are heard, ideas take form, and presence drives change. Our mission is to bridge creativity and identity, helping creators, brands, and audiences connect through purpose-driven media.

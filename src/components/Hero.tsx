@@ -39,7 +39,7 @@ const Hero = () => {
 
           {/* Subtext */}
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A creative and social storytelling venture by People Media — shaping narratives that move communities.
+            A creative and social storytelling venture by Peoples Media — shaping narratives that move communities.
           </p>
 
           {/* CTAs */}
