@@ -25,8 +25,11 @@ const Header = () => {
   const navLinks = [
     { name: "Home", id: "hero" },
     { name: "About", id: "about" },
+    { name: "Team", id: "team" },
     { name: "Mission", id: "mission" },
+    { name: "Process", id: "process" },
     { name: "Showcase", id: "showcase" },
+    { name: "Impact", id: "impact" },
     { name: "Peoples Media", id: "parent" },
   ];
 
