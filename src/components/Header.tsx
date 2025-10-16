@@ -30,7 +30,6 @@ const Header = () => {
     { name: "Process", id: "process" },
     { name: "Showcase", id: "showcase" },
     { name: "Impact", id: "impact" },
-    { name: "Peoples Media", id: "parent" },
   ];
 
   return (
