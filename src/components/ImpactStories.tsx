@@ -5,39 +5,39 @@ import { ChevronLeft, ChevronRight, Eye, TrendingUp, Award, Quote } from "lucide
 const impactData = [
   {
     type: "testimonial",
-    quote: "People Architect didn't just elevate our brand—they completely transformed how we connect with our audience. Our engagement rate increased by 340% in just 3 months.",
-    author: "Michael Chen",
-    role: "CEO, TechVenture Labs"
+    quote: "People Architect turned our dream space into reality. Professional, creative, and detail-focused. They understood our vision and brought it to life with exceptional craftsmanship.",
+    author: "Rajesh Kumar",
+    role: "Homeowner, Madurai"
   },
   {
     type: "metric",
-    metric: "2.5M+",
-    description: "Content Impressions Generated",
-    icon: Eye
-  },
-  {
-    type: "metric",
-    metric: "180%",
-    description: "Average Engagement Increase",
-    icon: TrendingUp
-  },
-  {
-    type: "testimonial",
-    quote: "The strategic approach and creative excellence they brought transformed our social presence into a powerful revenue driver. ROI exceeded our expectations by 220%.",
-    author: "Sarah Rodriguez",
-    role: "Marketing Director, Global Brands Inc"
+    metric: "100%",
+    description: "Client Satisfaction Rate",
+    icon: Award
   },
   {
     type: "metric",
     metric: "50+",
-    description: "Brands Successfully Transformed",
-    icon: Award
+    description: "Projects Successfully Completed",
+    icon: TrendingUp
   },
   {
     type: "testimonial",
-    quote: "They don't just understand social media—they architect digital ecosystems that drive real business outcomes. Our community grew from 5K to 150K in 6 months.",
-    author: "David Okonkwo",
-    role: "Founder, Impact Collective"
+    quote: "The team's expertise in materials and spatial design is outstanding. They created a functional yet beautiful office space that our employees love. Highly recommended!",
+    author: "Priya Sharma",
+    role: "Business Owner, Chennai"
+  },
+  {
+    type: "metric",
+    metric: "15+",
+    description: "Years of Design Excellence",
+    icon: Eye
+  },
+  {
+    type: "testimonial",
+    quote: "From concept to completion, People Architect delivered excellence. Their attention to detail and innovative approach to interior design exceeded our expectations.",
+    author: "Arun Patel",
+    role: "Client, Bangalore"
   }
 ];
 
@@ -63,7 +63,7 @@ const ImpactStories = () => {
   const currentItem = impactData[currentIndex];
 
   return (
-    <section id="impact" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary rounded-full blur-[120px]"></div>
@@ -79,11 +79,11 @@ const ImpactStories = () => {
           className="text-center mb-16 space-y-4"
         >
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-            Proven <span className="text-gradient">Results</span>
+            Client <span className="text-gradient">Experiences</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
           <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
-            Real outcomes from brands that trusted us to transform their digital presence
+            Hear from clients who trusted us to transform their spaces into architectural excellence
           </p>
         </motion.div>
 

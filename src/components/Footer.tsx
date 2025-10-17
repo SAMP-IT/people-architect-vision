@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-gradient">People Architect</span>
             </h3>
             <p className="font-body text-sm text-muted-foreground">
-              Strategic Storytelling. Authentic Impact.
+              Building stories, one space at a time.
             </p>
           </div>
 
@@ -43,18 +43,21 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Quick Links */}
-          <div className="flex justify-center gap-6 mb-8">
-            <a href="#" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors">
-              Home
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mb-8">
+            <a href="mailto:hello@peoplearchitect.in" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+              <Mail className="h-4 w-4" />
+              hello@peoplearchitect.in
             </a>
-            <span className="text-muted-foreground">•</span>
-            <a href="#" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors">
-              About
+            <span className="hidden md:inline text-muted-foreground">•</span>
+            <a href="https://instagram.com/people_architect" target="_blank" rel="noopener noreferrer" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+              <Instagram className="h-4 w-4" />
+              @people_architect
             </a>
-            <span className="text-muted-foreground">•</span>
-            <a href="#" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors">
-              Contact
+            <span className="hidden md:inline text-muted-foreground">•</span>
+            <a href="https://youtube.com/@PeopleArchitect" target="_blank" rel="noopener noreferrer" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+              <Youtube className="h-4 w-4" />
+              /PeopleArchitect
             </a>
           </div>
 

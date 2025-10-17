@@ -25,11 +25,11 @@ const Header = () => {
   const navLinks = [
     { name: "Home", id: "hero" },
     { name: "About", id: "about" },
-    { name: "Team", id: "team" },
-    { name: "Mission", id: "mission" },
-    { name: "Process", id: "process" },
-    { name: "Showcase", id: "showcase" },
-    { name: "Impact", id: "impact" },
+    { name: "Social", id: "social" },
+    { name: "Services", id: "services" },
+    { name: "Portfolio", id: "showcase" },
+    { name: "Testimonials", id: "impact" },
+    { name: "Careers", id: "careers" },
   ];
 
   return (

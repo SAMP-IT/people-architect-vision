@@ -11,13 +11,13 @@ const CTA = () => {
           <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in-up">
           {/* Title */}
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            Ready to Transform Your <span className="text-gradient">Digital Presence?</span>
+            Ready to Transform Your <span className="text-gradient">Space?</span>
           </h2>
 
           {/* Subtext */}
           <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Join industry leaders who trust us to architect their brand narratives. 
-            Let's create something exceptional together.
+            Let's collaborate to create architectural experiences that inspire. 
+            Connect with us to start your journey toward exceptional design.
           </p>
 
           {/* CTA Buttons */}

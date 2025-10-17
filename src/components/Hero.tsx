@@ -33,33 +33,40 @@ const Hero = () => {
           </h1>
 
           {/* Tagline */}
-          <p className="font-ui text-2xl md:text-4xl font-semibold text-foreground/90">
-            Strategic Storytelling. Authentic Impact.
+          <p className="font-heading text-2xl md:text-4xl font-semibold text-foreground/90 mb-4">
+            Design Beyond Aesthetics.
           </p>
 
           {/* Subtext */}
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We craft compelling digital narratives that transform brands into movements. 
-            Through strategic content design and authentic storytelling, we architect meaningful presence 
-            that resonates with your audience and drives measurable engagement.
+            Crafting intelligent spaces that inspire. We combine innovation, material expertise, and spatial storytelling to deliver architectural experiences that speak to both form and function.
           </p>
+
+          {/* Highlight */}
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 pt-6">
+            <span className="font-ui text-sm md:text-base text-primary uppercase tracking-wider">Architecture</span>
+            <span className="text-primary">•</span>
+            <span className="font-ui text-sm md:text-base text-primary uppercase tracking-wider">Interior Design</span>
+            <span className="text-primary">•</span>
+            <span className="font-ui text-sm md:text-base text-primary uppercase tracking-wider">Concept Visualization</span>
+          </div>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button 
               size="lg" 
               className="font-ui bg-gradient-gold text-primary-foreground hover:opacity-90 transition-all glow-gold-hover group"
+              onClick={() => document.getElementById('social')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <Instagram className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Explore on Instagram
+              Explore Work
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="font-ui border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all glow-gold-hover group"
+              className="font-ui border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground transition-all glow-gold-hover group"
             >
-              <Youtube className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Watch on YouTube
+              <Instagram className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              Follow on Instagram
             </Button>
           </div>
 

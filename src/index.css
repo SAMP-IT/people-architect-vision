@@ -8,53 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
+    /* Deep matte black background */
+    --background: 0 0% 4%;
     --foreground: 0 0% 96%;
 
-    --card: 0 0% 8%;
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 5%;
+    --popover: 0 0% 4%;
     --popover-foreground: 0 0% 96%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 0 0% 5%;
+    /* Gold accent gradient (#CBA135 → #E7C469) */
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 0 0% 10%;
+    --secondary: 0 0% 8%;
     --secondary-foreground: 0 0% 96%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    /* Muted text (#A0A0A0) */
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 43 96% 56%;
-    --accent-foreground: 0 0% 5%;
+    /* Accent gold */
+    --accent: 45 70% 63%;
+    --accent-foreground: 0 0% 4%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 45 100% 50%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 43 74% 49%;
 
     --radius: 0.5rem;
 
     /* Custom golden gradient tokens */
-    --gold-start: 45 100% 50%;
-    --gold-end: 43 96% 56%;
-    --gold-highlight: 45 90% 60%;
+    --gold-start: 43 74% 49%;
+    --gold-end: 45 70% 63%;
+    --gold-highlight: 43 80% 59%;
+    --gold-hover: 43 76% 56%;
     
     /* Background gradients */
-    --bg-gradient-start: 0 0% 0%;
-    --bg-gradient-end: 0 0% 10%;
+    --bg-gradient-start: 0 0% 4%;
+    --bg-gradient-end: 0 0% 6%;
 
-    --sidebar-background: 0 0% 5%;
+    --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 10%;
+    --sidebar-primary: 43 74% 49%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 8%;
     --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 45 100% 50%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 43 74% 49%;
   }
 }
 

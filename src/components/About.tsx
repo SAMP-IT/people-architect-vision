@@ -15,13 +15,13 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-gold"></div>
             <p className="font-body text-lg text-foreground/80 leading-relaxed">
-              People Architect is an independent strategic storytelling agency specializing in transforming brands into influential digital presences.
+              People Architect is an independent creative design studio redefining living spaces through architectural excellence and innovative spatial design.
             </p>
             <p className="font-body text-lg text-foreground/80 leading-relaxed">
-              We combine data-driven insights with creative excellence to design content ecosystems that don't just capture attention—they inspire action. Our approach merges brand psychology, visual storytelling, and community building to create authentic connections that drive sustainable growth.
+              We combine innovation, material expertise, and spatial storytelling to deliver architectural experiences that speak to both form and function. Our approach transforms concepts into reality, creating spaces that inspire and endure.
             </p>
             <blockquote className="border-l-4 border-primary pl-6 py-2 font-quote italic text-xl text-primary">
-              "We don't just create content — we architect meaningful experiences that build lasting brand equity."
+              "Architecture is not just about buildings — it's about crafting experiences that elevate human life."
             </blockquote>
           </div>
 

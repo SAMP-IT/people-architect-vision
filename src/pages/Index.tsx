@@ -1,12 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import TeamArchitects from "@/components/TeamArchitects";
-import Mission from "@/components/Mission";
-import DesignProcess from "@/components/DesignProcess";
+import SocialShowcase from "@/components/SocialShowcase";
+import Services from "@/components/Services";
 import Showcase from "@/components/Showcase";
 import ImpactStories from "@/components/ImpactStories";
-import CTA from "@/components/CTA";
+import Careers from "@/components/Careers";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,12 +14,11 @@ const Index = () => {
       <Header />
       <Hero />
       <About />
-      <TeamArchitects />
-      <Mission />
-      <DesignProcess />
+      <SocialShowcase />
+      <Services />
       <Showcase />
       <ImpactStories />
-      <CTA />
+      <Careers />
       <Footer />
     </main>
   );

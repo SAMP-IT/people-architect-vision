@@ -1,12 +1,12 @@
 import { Instagram } from "lucide-react";
 
 const showcaseItems = [
-  { id: 1, type: "post", placeholder: "Social Story 1" },
-  { id: 2, type: "reel", placeholder: "Creative Reel 1" },
-  { id: 3, type: "post", placeholder: "Brand Design 1" },
-  { id: 4, type: "reel", placeholder: "Creative Reel 2" },
-  { id: 5, type: "post", placeholder: "Social Story 2" },
-  { id: 6, type: "post", placeholder: "Brand Design 2" },
+  { id: 1, type: "post", placeholder: "Residential Design" },
+  { id: 2, type: "reel", placeholder: "Modern Interior" },
+  { id: 3, type: "post", placeholder: "Office Space" },
+  { id: 4, type: "reel", placeholder: "Material Showcase" },
+  { id: 5, type: "post", placeholder: "Villa Concept" },
+  { id: 6, type: "post", placeholder: "Luxury Living" },
 ];
 
 const Showcase = () => {
@@ -22,7 +22,7 @@ const Showcase = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our award-winning creative work and strategic campaigns that drive measurable business impact
+            Selected architectural and interior design works showcasing our commitment to form, function, and innovation
           </p>
         </div>
 
