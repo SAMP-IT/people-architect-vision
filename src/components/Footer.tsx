@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-gradient">People Architect</span>
             </h3>
             <p className="font-body text-sm text-muted-foreground">
-              Architecting Presence. Empowering Voices.
+              Strategic Storytelling. Authentic Impact.
             </p>
           </div>
 

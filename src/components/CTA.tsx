@@ -8,15 +8,16 @@ const CTA = () => {
       <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-50"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in-up">
+          <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in-up">
           {/* Title */}
           <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            Be Part of <span className="text-gradient">Our Story</span>
+            Ready to Transform Your <span className="text-gradient">Digital Presence?</span>
           </h2>
 
           {/* Subtext */}
           <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Follow us and witness how we design digital presence that inspires.
+            Join industry leaders who trust us to architect their brand narratives. 
+            Let's create something exceptional together.
           </p>
 
           {/* CTA Buttons */}

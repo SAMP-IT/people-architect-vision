@@ -18,11 +18,11 @@ const Showcase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="text-gradient">Social Canvas</span>
+            Our <span className="text-gradient">Portfolio</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our creative work across Instagram and YouTube
+            Explore our award-winning creative work and strategic campaigns that drive measurable business impact
           </p>
         </div>
 

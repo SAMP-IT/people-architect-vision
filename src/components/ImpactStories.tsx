@@ -1,37 +1,43 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Users, BookOpen, Award, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Eye, TrendingUp, Award, Quote } from "lucide-react";
 
 const impactData = [
   {
     type: "testimonial",
-    quote: "People Architect transformed our brand narrative into a movement that resonates with our community.",
-    author: "Sarah Johnson",
-    role: "Founder, CreativeHub"
+    quote: "People Architect didn't just elevate our brand—they completely transformed how we connect with our audience. Our engagement rate increased by 340% in just 3 months.",
+    author: "Michael Chen",
+    role: "CEO, TechVenture Labs"
   },
   {
     type: "metric",
-    metric: "50K+",
-    description: "Voices Amplified",
-    icon: Users
+    metric: "2.5M+",
+    description: "Content Impressions Generated",
+    icon: Eye
   },
   {
     type: "metric",
-    metric: "100+",
-    description: "Stories Crafted",
-    icon: BookOpen
+    metric: "180%",
+    description: "Average Engagement Increase",
+    icon: TrendingUp
   },
   {
     type: "testimonial",
-    quote: "They don't just create content—they architect presence and purpose.",
-    author: "Michael Chen",
-    role: "Social Impact Leader"
+    quote: "The strategic approach and creative excellence they brought transformed our social presence into a powerful revenue driver. ROI exceeded our expectations by 220%.",
+    author: "Sarah Rodriguez",
+    role: "Marketing Director, Global Brands Inc"
   },
   {
     type: "metric",
-    metric: "25+",
-    description: "Brands Transformed",
+    metric: "50+",
+    description: "Brands Successfully Transformed",
     icon: Award
+  },
+  {
+    type: "testimonial",
+    quote: "They don't just understand social media—they architect digital ecosystems that drive real business outcomes. Our community grew from 5K to 150K in 6 months.",
+    author: "David Okonkwo",
+    role: "Founder, Impact Collective"
   }
 ];
 
@@ -72,12 +78,12 @@ const ImpactStories = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            <span className="text-gradient">Impact</span> Stories
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            Proven <span className="text-gradient">Results</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-gold mx-auto"></div>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real voices, real impact — the stories that define our purpose.
+          <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
+          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            Real outcomes from brands that trusted us to transform their digital presence
           </p>
         </motion.div>
 

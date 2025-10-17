@@ -3,18 +3,18 @@ import { Sparkles, Users, Target } from "lucide-react";
 const missionCards = [
   {
     icon: Sparkles,
-    title: "Brand Storytelling",
-    description: "Transforming ideas into authentic narratives that resonate and inspire."
+    title: "Strategic Brand Narratives",
+    description: "We transform complex brand identities into compelling stories that drive emotional connection and business growth. Every narrative is strategically crafted to position you as an industry leader."
   },
   {
     icon: Target,
-    title: "Social Media Identity",
-    description: "Designing visual experiences that capture attention and build lasting connections."
+    title: "Content Architecture",
+    description: "Our systematic approach designs cohesive content ecosystems across platforms. From visual identity to messaging frameworks, we build scalable systems that amplify your brand consistently."
   },
   {
     icon: Users,
-    title: "Community Growth",
-    description: "Connecting people through meaningful engagement and shared purpose."
+    title: "Community Engineering",
+    description: "We cultivate engaged communities through data-driven strategies and authentic interactions. Building loyal audiences that advocate for your brand and fuel organic growth."
   }
 ];
 
@@ -24,9 +24,12 @@ const Mission = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-            We Build <span className="text-gradient">Digital Presence</span>
+            Our Core <span className="text-gradient">Expertise</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-gold mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
+          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            Three pillars of strategic excellence that transform brands into market leaders
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

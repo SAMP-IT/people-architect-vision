@@ -34,12 +34,14 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="font-ui text-2xl md:text-4xl font-semibold text-foreground/90">
-            Architecting Presence. Empowering Voices.
+            Strategic Storytelling. Authentic Impact.
           </p>
 
           {/* Subtext */}
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            An independent creative and social storytelling venture — shaping narratives that move communities.
+            We craft compelling digital narratives that transform brands into movements. 
+            Through strategic content design and authentic storytelling, we architect meaningful presence 
+            that resonates with your audience and drives measurable engagement.
           </p>
 
           {/* CTAs */}

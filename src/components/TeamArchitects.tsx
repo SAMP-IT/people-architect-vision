@@ -1,29 +1,29 @@
 import { motion } from "framer-motion";
 
 const team = [
-  {
-    name: "Alex Reed",
-    title: "Creative Lead",
-    philosophy: "Empowering voices through visual storytelling.",
-    avatar: "AR"
+  { 
+    name: "Sarah Mitchell", 
+    title: "Strategic Director", 
+    philosophy: "Transforming brand visions into market-leading digital strategies.",
+    avatar: "SM"
   },
-  {
-    name: "Priya Sharma",
-    title: "Brand Architect",
-    philosophy: "Building trust with purposeful design.",
-    avatar: "PS"
+  { 
+    name: "Marcus Chen", 
+    title: "Creative Architect", 
+    philosophy: "Crafting visual narratives that command attention and inspire action.",
+    avatar: "MC"
   },
-  {
-    name: "Jordan Kim",
-    title: "Social Strategist",
-    philosophy: "Connecting communities through authentic narratives.",
-    avatar: "JK"
+  { 
+    name: "Priya Kapoor", 
+    title: "Content Strategist", 
+    philosophy: "Building content ecosystems that drive measurable business outcomes.",
+    avatar: "PK"
   },
-  {
-    name: "Maya Patel",
-    title: "Content Architect",
-    philosophy: "Crafting stories that inspire change.",
-    avatar: "MP"
+  { 
+    name: "Jordan Blake", 
+    title: "Community Architect", 
+    philosophy: "Engineering engaged communities through authentic brand storytelling.",
+    avatar: "JB"
   }
 ];
 
@@ -39,12 +39,12 @@ const TeamArchitects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            Meet Our <span className="text-gradient">People Architects</span>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            Meet the <span className="text-gradient">Architects</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-gold mx-auto"></div>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            The minds behind the vision — crafting narratives, designing presence, and empowering communities.
+          <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
+          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            Industry veterans combining strategic thinking with creative excellence to deliver exceptional results
           </p>
         </motion.div>
 

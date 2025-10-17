@@ -1,35 +1,35 @@
 import { motion } from "framer-motion";
-import { Ear, Pencil, Hammer, Volume2, TrendingUp } from "lucide-react";
+import { Search, Pencil, Sparkles, Target, TrendingUp } from "lucide-react";
 
 const processSteps = [
   {
     number: 1,
-    title: "Listen",
-    description: "We begin by understanding your voice, vision, and values.",
-    icon: Ear
+    title: "Strategic Discovery",
+    description: "Deep dive into your brand DNA, market position, and competitive landscape to identify unique opportunities.",
+    icon: Search
   },
   {
     number: 2,
-    title: "Design",
-    description: "Crafting authentic narratives that resonate with your audience.",
+    title: "Narrative Design",
+    description: "Crafting compelling brand stories backed by consumer psychology and data-driven insights.",
     icon: Pencil
   },
   {
     number: 3,
-    title: "Build",
-    description: "Creating digital presence across platforms with purpose.",
-    icon: Hammer
+    title: "Content Production",
+    description: "Creating high-impact visual and written content optimized for platform algorithms and audience behavior.",
+    icon: Sparkles
   },
   {
     number: 4,
-    title: "Amplify",
-    description: "Empowering your message to reach and inspire communities.",
-    icon: Volume2
+    title: "Strategic Distribution",
+    description: "Deploying content across channels with precision timing and audience targeting for maximum reach.",
+    icon: Target
   },
   {
     number: 5,
-    title: "Evolve",
-    description: "Continuous growth and adaptation with changing landscapes.",
+    title: "Performance Optimization",
+    description: "Continuous analysis and refinement based on engagement metrics and business KPIs.",
     icon: TrendingUp
   }
 ];
@@ -52,12 +52,12 @@ const DesignProcess = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="font-heading text-4xl md:text-5xl font-bold">
-            Our <span className="text-gradient">Design Process</span>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+            Our Proven <span className="text-gradient">Methodology</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-gold mx-auto"></div>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            From vision to reality — a structured journey of transformation.
+          <div className="w-20 h-1 bg-gradient-gold mx-auto mb-4"></div>
+          <p className="font-body text-lg text-muted-foreground max-w-3xl mx-auto">
+            A systematic 5-phase approach that consistently delivers measurable results
           </p>
         </motion.div>
 
