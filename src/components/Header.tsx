@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Instagram, Youtube, Mail } from "lucide-react";
+import { Menu, X, Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,14 +25,18 @@ const Header = () => {
     }
   };
 
+  const handleGetQuote = () => {
+    navigate("/contact");
+    setIsMobileMenuOpen(false);
+  };
+
   const navLinks = [
-    { name: "Home", id: "hero" },
-    { name: "About", id: "about" },
-    { name: "Social", id: "social" },
-    { name: "Services", id: "services" },
-    { name: "Portfolio", id: "showcase" },
-    { name: "Testimonials", id: "testimonials" },
-    { name: "Careers", id: "careers" },
+    { name: "Home", id: "hero", isRoute: false },
+    { name: "About", id: "about", isRoute: false },
+    { name: "Services", id: "services", isRoute: false },
+    { name: "Portfolio", id: "showcase", isRoute: false },
+    { name: "Blog", id: "/blog", isRoute: true },
+    { name: "Team", id: "/team", isRoute: true },
   ];
 
   return (
@@ -62,7 +69,7 @@ const Header = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => link.isRoute ? navigate(link.id) : scrollToSection(link.id)}
                 className="font-ui text-sm font-medium text-foreground hover:text-gold-start transition-colors relative group"
               >
                 {link.name}
@@ -71,33 +78,44 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Social Icons - Desktop */}
+          {/* CTA + Social Icons - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
-              aria-label="Instagram"
+            <Button
+              onClick={handleGetQuote}
+              size="sm"
+              className="font-ui bg-gradient-gold text-primary-foreground hover:opacity-90 transition-all glow-gold-hover"
             >
-              <Instagram size={20} />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
-              aria-label="YouTube"
-            >
-              <Youtube size={20} />
-            </a>
-            <a
-              href="mailto:contact@peoplearchitect.com"
-              className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
-              aria-label="Email"
-            >
-              <Mail size={20} />
-            </a>
+              <Phone className="mr-2 h-4 w-4" />
+              Get a Quote
+            </Button>
+
+            <div className="flex items-center space-x-3 ml-2 pl-4 border-l border-border">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
+                aria-label="YouTube"
+              >
+                <Youtube size={20} />
+              </a>
+              <a
+                href="mailto:contact@peoplearchitect.com"
+                className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
+                aria-label="Email"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -124,13 +142,23 @@ const Header = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.id}
-                  onClick={() => scrollToSection(link.id)}
+                  onClick={() => link.isRoute ? navigate(link.id) : scrollToSection(link.id)}
                   className="font-ui text-base font-medium text-foreground hover:text-gold-start transition-colors text-left py-2"
                 >
                   {link.name}
                 </button>
               ))}
-              
+
+              {/* Get Quote CTA - Mobile */}
+              <Button
+                onClick={handleGetQuote}
+                size="lg"
+                className="font-ui bg-gradient-gold text-primary-foreground hover:opacity-90 transition-all glow-gold-hover w-full mt-2"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Get a Quote
+              </Button>
+
               {/* Social Icons - Mobile */}
               <div className="flex items-center space-x-6 pt-4 border-t border-gold-start/20">
                 <a
