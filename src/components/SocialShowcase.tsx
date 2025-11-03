@@ -1,19 +1,63 @@
-import { Instagram, Youtube, Grid3x3, Film, Image as ImageIcon } from "lucide-react";
+import { Instagram, Youtube, Grid3x3, Film, Image as ImageIcon, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
 const SocialShowcase = () => {
   const [activeFilter, setActiveFilter] = useState<"all" | "posts" | "reels" | "youtube">("all");
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-  // Placeholder for Instagram reels/posts
+  // Instagram reels with actual links
   const socialPosts = [
-    { id: 1, type: "Modern living space design", category: "posts" },
-    { id: 2, type: "Material texture showcase", category: "reels" },
-    { id: 3, type: "Architectural concept", category: "posts" },
-    { id: 4, type: "Interior transformation", category: "youtube" },
-    { id: 5, type: "Design process video", category: "reels" },
-    { id: 6, type: "Client project reveal", category: "posts" },
+    {
+      id: 1,
+      type: "Modern living space design",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DOqYCTGjx6G/",
+      embedUrl: "https://www.instagram.com/reel/DOqYCTGjx6G/embed",
+      thumbnail: "https://www.instagram.com/reel/DOqYCTGjx6G/media/?size=l"
+    },
+    {
+      id: 2,
+      type: "Material texture showcase",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DOljm30ExBv/",
+      embedUrl: "https://www.instagram.com/reel/DOljm30ExBv/embed",
+      thumbnail: "https://www.instagram.com/reel/DOljm30ExBv/media/?size=l"
+    },
+    {
+      id: 3,
+      type: "Architectural concept",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DNYC9pPhX83/",
+      embedUrl: "https://www.instagram.com/reel/DNYC9pPhX83/embed",
+      thumbnail: "https://www.instagram.com/reel/DNYC9pPhX83/media/?size=l"
+    },
+    {
+      id: 4,
+      type: "Interior transformation",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DNVT8FZhp13/",
+      embedUrl: "https://www.instagram.com/reel/DNVT8FZhp13/embed",
+      thumbnail: "https://www.instagram.com/reel/DNVT8FZhp13/media/?size=l"
+    },
+    {
+      id: 5,
+      type: "Design process video",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DNNvu4OhGhL/",
+      embedUrl: "https://www.instagram.com/reel/DNNvu4OhGhL/embed",
+      thumbnail: "https://www.instagram.com/reel/DNNvu4OhGhL/media/?size=l"
+    },
+    {
+      id: 6,
+      type: "Client project reveal",
+      category: "reels",
+      url: "https://www.instagram.com/reel/DNLRoTmhKdj/",
+      embedUrl: "https://www.instagram.com/reel/DNLRoTmhKdj/embed",
+      thumbnail: "https://www.instagram.com/reel/DNLRoTmhKdj/media/?size=l"
+    },
   ];
 
   const filters = [
@@ -64,7 +108,7 @@ const SocialShowcase = () => {
           ))}
         </div>
 
-        {/* Grid of social content placeholders */}
+        {/* Grid of social content with embedded videos */}
         <motion.div
           key={activeFilter}
           initial={{ opacity: 0 }}
@@ -73,28 +117,61 @@ const SocialShowcase = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12"
         >
           {filteredPosts.map((post, index) => (
-            <motion.div
-              key={post.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group relative aspect-square bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 cursor-pointer"
-            >
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
-              
-              {/* Content */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                <Instagram className="h-12 w-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <p className="font-ui text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                  {post.type}
-                </p>
-              </div>
+            <Dialog key={post.id}>
+              <DialogTrigger asChild>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  className="group relative aspect-square bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                  onClick={() => setSelectedVideo(post.embedUrl)}
+                >
+                  {/* Background Image/Thumbnail */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-background">
+                    <iframe
+                      src={post.embedUrl}
+                      className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-80"
+                      style={{ transform: 'scale(1.1)' }}
+                      loading="lazy"
+                    />
+                  </div>
 
-              {/* Hover effect */}
-              <div className="absolute inset-0 border-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
-            </motion.div>
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent group-hover:opacity-80 transition-opacity duration-300"></div>
+
+                  {/* Play Button Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 group-hover:bg-primary transition-all duration-300 shadow-lg">
+                      <Play className="h-8 w-8 text-primary-foreground ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                    <Instagram className="h-8 w-8 text-primary mb-2 mx-auto group-hover:scale-110 transition-transform duration-300" />
+                    <p className="font-ui text-sm text-foreground font-medium">
+                      {post.type}
+                    </p>
+                  </div>
+
+                  {/* Hover effect border */}
+                  <div className="absolute inset-0 border-2 border-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+                </motion.div>
+              </DialogTrigger>
+
+              <DialogContent className="max-w-2xl w-full h-[80vh] p-0 bg-background border-2 border-primary/20">
+                <div className="w-full h-full flex items-center justify-center bg-black/50">
+                  <iframe
+                    src={selectedVideo || post.embedUrl}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </motion.div>
 
