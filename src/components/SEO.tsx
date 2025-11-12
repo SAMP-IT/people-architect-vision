@@ -17,7 +17,7 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "People Architect | Design Beyond Aesthetics",
+  title = "SAMP IT | Design Beyond Aesthetics",
   description = "Crafting intelligent spaces that inspire. Independent architectural design studio specializing in architectural design, interior design, and material consulting in Chennai, Tamil Nadu.",
   keywords = "architecture, interior design, material consulting, chennai architect, residential design, commercial design, sustainable architecture",
   canonicalUrl,
@@ -25,18 +25,18 @@ const SEO = ({
   ogType = "website",
   article
 }: SEOProps) => {
-  const siteUrl = "https://peoplearchitect.in"; // Update with your actual domain
+  const siteUrl = "https://sampit.in"; // Update with your actual domain
   const fullUrl = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;
 
   // Structured Data for LocalBusiness
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ArchitectsOffice",
-    "name": "People Architect",
+    "name": "SAMP IT",
     "description": description,
     "url": siteUrl,
     "telephone": "+91-98765-43210",
-    "email": "hello@peoplearchitect.in",
+    "email": "hello@sampit.in",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Chennai",
@@ -58,8 +58,8 @@ const SEO = ({
     ],
     "priceRange": "₹₹₹",
     "sameAs": [
-      "https://instagram.com/people_architect",
-      "https://youtube.com/@PeopleArchitect"
+      "https://instagram.com/sampit",
+      "https://youtube.com/@SAMPIT"
     ],
     "areaServed": {
       "@type": "State",
@@ -108,11 +108,11 @@ const SEO = ({
     "dateModified": article.modifiedTime || article.publishedTime,
     "author": {
       "@type": "Organization",
-      "name": article.author || "People Architect"
+      "name": article.author || "SAMP IT"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "People Architect",
+      "name": "SAMP IT",
       "logo": {
         "@type": "ImageObject",
         "url": `${siteUrl}/logo.png`
@@ -136,7 +136,7 @@ const SEO = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:image" content={`${siteUrl}${ogImage}`} />
-      <meta property="og:site_name" content="People Architect" />
+      <meta property="og:site_name" content="SAMP IT" />
       <meta property="og:locale" content="en_IN" />
 
       {/* Article Meta Tags */}
@@ -156,13 +156,13 @@ const SEO = ({
 
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@people_architect" />
+      <meta name="twitter:site" content="@sampit" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
 
       {/* Additional SEO Meta Tags */}
-      <meta name="author" content="People Architect" />
+      <meta name="author" content="SAMP IT" />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="geo.region" content="IN-TN" />

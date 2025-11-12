@@ -55,7 +55,7 @@ const Footer = () => {
             {/* Company Info */}
             <div>
               <h3 className="font-heading text-2xl font-bold mb-4">
-                <span className="text-gradient">People Architect</span>
+                <span className="text-gradient">SAMP IT</span>
               </h3>
               <p className="font-body text-sm text-muted-foreground mb-6 leading-relaxed">
                 Crafting intelligent spaces that inspire through architectural excellence and innovative spatial design.
@@ -63,7 +63,7 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex gap-3">
                 <a
-                  href="https://instagram.com/people_architect"
+                  href="https://instagram.com/sampit"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-2 bg-card border border-border rounded-full hover:border-primary transition-all glow-gold-hover"
@@ -72,7 +72,7 @@ const Footer = () => {
                   <Instagram className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a
-                  href="https://youtube.com/@PeopleArchitect"
+                  href="https://youtube.com/@SAMPIT"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-2 bg-card border border-border rounded-full hover:border-primary transition-all glow-gold-hover"
@@ -81,7 +81,7 @@ const Footer = () => {
                   <Youtube className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a
-                  href="mailto:hello@peoplearchitect.in"
+                  href="mailto:hello@sampit.in"
                   className="group p-2 bg-card border border-border rounded-full hover:border-primary transition-all glow-gold-hover"
                   aria-label="Email"
                 >
@@ -113,11 +113,11 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="mailto:hello@peoplearchitect.in"
+                    href="mailto:hello@sampit.in"
                     className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors flex items-start gap-2"
                   >
                     <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                    <span>hello@peoplearchitect.in</span>
+                    <span>hello@sampit.in</span>
                   </a>
                 </li>
                 <li>
@@ -182,7 +182,7 @@ const Footer = () => {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="font-ui text-sm text-muted-foreground text-center md:text-left">
-                © 2025 People Architect. All rights reserved.
+                © 2025 SAMP IT. All rights reserved.
               </p>
               <div className="flex gap-6">
                 <a href="#" className="font-ui text-sm text-muted-foreground hover:text-primary transition-colors">
