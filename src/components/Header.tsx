@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import { Menu, X, Instagram, Youtube, Mail, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,10 +19,35 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
+    setIsMobileMenuOpen(false);
+
+    // If not on home page, navigate to home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const handleLogoClick = () => {
+    setIsMobileMenuOpen(false);
+    if (location.pathname === "/") {
+      // Already on home, scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // Navigate to home
+      navigate("/");
     }
   };
 
@@ -54,7 +80,7 @@ const Header = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center cursor-pointer"
-            onClick={() => scrollToSection("hero")}
+            onClick={handleLogoClick}
           >
             <h1 className="font-heading text-2xl sm:text-3xl font-bold text-gradient">
               People Architect
@@ -91,7 +117,7 @@ const Header = () => {
 
             <div className="flex items-center space-x-3 ml-2 pl-4 border-l border-border">
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/people_architect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
@@ -100,7 +126,7 @@ const Header = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://youtube.com/@PeopleArchitect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
@@ -109,7 +135,7 @@ const Header = () => {
                 <Youtube size={20} />
               </a>
               <a
-                href="mailto:contact@peoplearchitect.com"
+                href="mailto:hello@peoplearchitect.in"
                 className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
                 aria-label="Email"
               >
@@ -162,7 +188,7 @@ const Header = () => {
               {/* Social Icons - Mobile */}
               <div className="flex items-center space-x-6 pt-4 border-t border-gold-start/20">
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/people_architect"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground hover:text-gold-start transition-colors"
@@ -171,7 +197,7 @@ const Header = () => {
                   <Instagram size={22} />
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://youtube.com/@PeopleArchitect"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground hover:text-gold-start transition-colors"
@@ -180,7 +206,7 @@ const Header = () => {
                   <Youtube size={22} />
                 </a>
                 <a
-                  href="mailto:contact@peoplearchitect.com"
+                  href="mailto:hello@peoplearchitect.in"
                   className="text-foreground hover:text-gold-start transition-colors"
                   aria-label="Email"
                 >
