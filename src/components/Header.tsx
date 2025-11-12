@@ -57,7 +57,7 @@ const Header = () => {
             onClick={() => scrollToSection("hero")}
           >
             <h1 className="font-heading text-2xl sm:text-3xl font-bold text-gradient">
-              SAMP IT
+              People Architect
             </h1>
           </motion.div>
 
@@ -109,7 +109,7 @@ const Header = () => {
                 <Youtube size={20} />
               </a>
               <a
-                href="mailto:hello@sampit.in"
+                href="mailto:contact@peoplearchitect.com"
                 className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
                 aria-label="Email"
               >

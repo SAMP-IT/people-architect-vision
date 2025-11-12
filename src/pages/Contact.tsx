@@ -148,7 +148,7 @@ const Contact = () => {
                 <h2 className="font-heading text-2xl font-bold mb-6">Get in Touch</h2>
                 <div className="space-y-6">
                   <a
-                    href="mailto:hello@sampit.in"
+                    href="mailto:hello@peoplearchitect.in"
                     className="flex items-start gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all group"
                   >
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0 group-hover:animate-glow-pulse">
@@ -156,7 +156,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-ui text-sm text-muted-foreground">Email</p>
-                      <p className="font-body text-foreground">hello@sampit.in</p>
+                      <p className="font-body text-foreground">hello@peoplearchitect.in</p>
                     </div>
                   </a>
 
