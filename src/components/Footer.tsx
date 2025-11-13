@@ -54,9 +54,13 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Company Info */}
             <div>
-              <h3 className="font-heading text-2xl font-bold mb-4">
-                <span className="text-gradient">People Architect</span>
-              </h3>
+              <div className="mb-4">
+                <img
+                  src="/logo.png"
+                  alt="People Architect Logo"
+                  className="h-12 w-auto"
+                />
+              </div>
               <p className="font-body text-sm text-muted-foreground mb-6 leading-relaxed">
                 Crafting intelligent spaces that inspire through architectural excellence and innovative spatial design.
               </p>
