@@ -79,25 +79,12 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-3 cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={handleLogoClick}
           >
-            <div className="flex items-center">
-              <img
-                src="/logo.png"
-                alt="People Architect Logo"
-                className="h-10 sm:h-12 w-auto"
-                onError={(e) => {
-                  // Fallback to text logo if image fails to load
-                  e.currentTarget.style.display = 'none';
-                  const textLogo = e.currentTarget.nextElementSibling;
-                  if (textLogo) textLogo.classList.remove('hidden');
-                }}
-              />
-              <h1 className="font-heading text-xl sm:text-2xl font-bold text-gradient hidden">
-                People Architect
-              </h1>
-            </div>
+            <h1 className="font-heading text-2xl sm:text-3xl font-bold text-gradient">
+              People Architect
+            </h1>
           </motion.div>
 
           {/* Desktop Navigation */}
