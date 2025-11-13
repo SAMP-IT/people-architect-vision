@@ -82,9 +82,11 @@ const Header = () => {
             className="flex items-center cursor-pointer"
             onClick={handleLogoClick}
           >
-            <h1 className="font-heading text-2xl sm:text-3xl font-bold text-gradient">
-              People Architect
-            </h1>
+            <img
+              src="/logo.png"
+              alt="People Architect Logo"
+              className="h-10 sm:h-12 w-auto"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
