@@ -74,7 +74,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 sm:h-28 md:h-32 lg:h-36">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -85,7 +85,7 @@ const Header = () => {
             <img
               src="/logo.png"
               alt="People Architect Logo"
-              className="h-14 sm:h-16 md:h-20 w-auto"
+              className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto"
             />
           </motion.div>
 
