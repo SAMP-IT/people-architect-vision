@@ -17,7 +17,7 @@ const blogPosts = [
     date: "March 15, 2024",
     category: "Sustainability",
     readTime: "5 min read",
-    image: "blog-1"
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=450&fit=crop"
   },
   {
     id: "2",
@@ -27,7 +27,7 @@ const blogPosts = [
     date: "March 10, 2024",
     category: "Interior Design",
     readTime: "7 min read",
-    image: "blog-2"
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=450&fit=crop"
   },
   {
     id: "3",
@@ -37,7 +37,7 @@ const blogPosts = [
     date: "March 5, 2024",
     category: "Materials",
     readTime: "6 min read",
-    image: "blog-3"
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=450&fit=crop"
   },
   {
     id: "4",
@@ -47,7 +47,7 @@ const blogPosts = [
     date: "February 28, 2024",
     category: "Design Trends",
     readTime: "4 min read",
-    image: "blog-4"
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=450&fit=crop"
   }
 ];
 
@@ -135,8 +135,12 @@ const Blog = () => {
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-all hover:shadow-[0_0_40px_rgba(203,161,53,0.15)] cursor-pointer"
                 onClick={() => navigate(`/blog/${post.id}`)}
               >
-                <div className="aspect-video bg-gradient-to-br from-muted to-secondary flex items-center justify-center">
-                  <span className="text-sm text-muted-foreground">Featured Image</span>
+                <div className="aspect-video bg-gradient-to-br from-muted to-secondary overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
 
                 <div className="p-6 space-y-4">

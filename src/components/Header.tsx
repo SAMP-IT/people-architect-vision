@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Instagram, Youtube, Mail, Phone } from "lucide-react";
+import { Menu, X, Instagram, Mail, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -62,7 +62,6 @@ const Header = () => {
     { name: "Services", id: "services", isRoute: false },
     { name: "Portfolio", id: "showcase", isRoute: false },
     { name: "Blog", id: "/blog", isRoute: true },
-    { name: "Team", id: "/team", isRoute: true },
   ];
 
   return (
@@ -119,22 +118,13 @@ const Header = () => {
 
             <div className="flex items-center space-x-3 ml-2 pl-4 border-l border-border">
               <a
-                href="https://instagram.com/people_architect"
+                href="https://www.instagram.com/people_architect/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="https://youtube.com/@PeopleArchitect"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-gold-start transition-colors glow-gold-hover"
-                aria-label="YouTube"
-              >
-                <Youtube size={20} />
               </a>
               <a
                 href="mailto:hello@peoplearchitect.in"
@@ -190,22 +180,13 @@ const Header = () => {
               {/* Social Icons - Mobile */}
               <div className="flex items-center space-x-6 pt-4 border-t border-gold-start/20">
                 <a
-                  href="https://instagram.com/people_architect"
+                  href="https://www.instagram.com/people_architect/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground hover:text-gold-start transition-colors"
                   aria-label="Instagram"
                 >
                   <Instagram size={22} />
-                </a>
-                <a
-                  href="https://youtube.com/@PeopleArchitect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground hover:text-gold-start transition-colors"
-                  aria-label="YouTube"
-                >
-                  <Youtube size={22} />
                 </a>
                 <a
                   href="mailto:hello@peoplearchitect.in"

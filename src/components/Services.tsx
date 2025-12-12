@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "What areas do you serve?",
-    answer: "We primarily serve clients in Chennai and surrounding regions of Tamil Nadu, but we're open to discussing projects across India and internationally for the right opportunities."
+    answer: "We primarily serve clients in Madurai and surrounding regions of Tamil Nadu, but we're open to discussing projects across India and internationally for the right opportunities."
   },
   {
     question: "How do you charge for your services?",

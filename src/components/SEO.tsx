@@ -18,8 +18,8 @@ interface SEOProps {
 
 const SEO = ({
   title = "People Architect | Design Beyond Aesthetics",
-  description = "Crafting intelligent spaces that inspire. Independent architectural design studio specializing in architectural design, interior design, and material consulting in Chennai, Tamil Nadu.",
-  keywords = "architecture, interior design, material consulting, chennai architect, residential design, commercial design, sustainable architecture",
+  description = "Crafting intelligent spaces that inspire. Independent architectural design studio specializing in architectural design, interior design, and material consulting in Madurai, Tamil Nadu.",
+  keywords = "architecture, interior design, material consulting, madurai architect, residential design, commercial design, sustainable architecture",
   canonicalUrl,
   ogImage = "/og-image.jpg",
   ogType = "website",
@@ -39,14 +39,14 @@ const SEO = ({
     "email": "hello@peoplearchitect.in",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Chennai",
+      "addressLocality": "Madurai",
       "addressRegion": "Tamil Nadu",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "13.0827",
-      "longitude": "80.2707"
+      "latitude": "9.9252",
+      "longitude": "78.1198"
     },
     "openingHoursSpecification": [
       {
@@ -58,8 +58,7 @@ const SEO = ({
     ],
     "priceRange": "₹₹₹",
     "sameAs": [
-      "https://instagram.com/people_architect",
-      "https://youtube.com/@PeopleArchitect"
+      "https://www.instagram.com/people_architect/"
     ],
     "areaServed": {
       "@type": "State",
@@ -166,7 +165,7 @@ const SEO = ({
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="geo.region" content="IN-TN" />
-      <meta name="geo.placename" content="Chennai" />
+      <meta name="geo.placename" content="Madurai" />
 
       {/* Structured Data */}
       <script type="application/ld+json">

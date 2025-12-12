@@ -25,7 +25,7 @@ const impactData = [
     type: "testimonial",
     quote: "The team's expertise in materials and spatial design is outstanding. They created a functional yet beautiful office space that our employees love. Highly recommended!",
     author: "Priya Sharma",
-    role: "Business Owner, Chennai"
+    role: "Business Owner, Madurai"
   },
   {
     type: "metric",

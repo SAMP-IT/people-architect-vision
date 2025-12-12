@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 import heroBg from "@/assets/hero-bg.jpg";

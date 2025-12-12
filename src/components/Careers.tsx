@@ -36,12 +36,12 @@ const Careers = () => {
 
           {/* CTA */}
           <div className="pt-4">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="font-ui bg-gradient-gold text-primary-foreground hover:opacity-90 transition-all glow-gold-hover group"
               asChild
             >
-              <a href="mailto:hello@peoplearchitect.in">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScfymvOjTiT8lm81bSs8qYEZJAWLSHpe6YMqP7eTZVxv0j-yg/viewform" target="_blank" rel="noopener noreferrer">
                 <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                 Apply Now
               </a>

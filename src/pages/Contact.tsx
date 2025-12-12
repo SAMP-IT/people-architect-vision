@@ -179,7 +179,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-ui text-sm text-muted-foreground">Office</p>
-                      <p className="font-body text-foreground">Chennai, Tamil Nadu, India</p>
+                      <p className="font-body text-foreground">Madurai, Tamil Nadu, India</p>
                     </div>
                   </div>
                 </div>

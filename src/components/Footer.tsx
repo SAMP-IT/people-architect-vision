@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Mail, Send, MapPin, Phone, Clock, Loader2 } from "lucide-react";
+import { Instagram, Mail, Send, MapPin, Phone, Clock, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -63,22 +63,13 @@ const Footer = () => {
               {/* Social Links */}
               <div className="flex gap-3">
                 <a
-                  href="https://instagram.com/people_architect"
+                  href="https://www.instagram.com/people_architect/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-2 bg-card border border-border rounded-full hover:border-primary transition-all glow-gold-hover"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                </a>
-                <a
-                  href="https://youtube.com/@PeopleArchitect"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-2 bg-card border border-border rounded-full hover:border-primary transition-all glow-gold-hover"
-                  aria-label="YouTube"
-                >
-                  <Youtube className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </a>
                 <a
                   href="mailto:hello@peoplearchitect.in"
@@ -131,7 +122,7 @@ const Footer = () => {
                 </li>
                 <li className="font-ui text-sm text-muted-foreground flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                  <span>Chennai, Tamil Nadu, India</span>
+                  <span>Madurai, Tamil Nadu, India</span>
                 </li>
                 <li className="font-ui text-sm text-muted-foreground flex items-start gap-2">
                   <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />

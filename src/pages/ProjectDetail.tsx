@@ -21,11 +21,11 @@ interface ProjectData {
 
 // Sample project data - in production, this would come from a CMS or database
 const projectsData: Record<string, ProjectData> = {
-  "modern-villa-chennai": {
-    id: "modern-villa-chennai",
-    title: "Modern Villa in Chennai",
+  "modern-villa-madurai": {
+    id: "modern-villa-madurai",
+    title: "Modern Villa in Madurai",
     category: "Residential",
-    location: "Chennai, Tamil Nadu",
+    location: "Madurai, Tamil Nadu",
     year: "2024",
     area: "4,500 sq ft",
     description: "A contemporary villa design that seamlessly blends indoor and outdoor living spaces while maintaining privacy and maximizing natural light.",
