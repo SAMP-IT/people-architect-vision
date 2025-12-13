@@ -166,7 +166,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/98 backdrop-blur-md border-b border-gold-start/20"
+            className="bg-background/98 backdrop-blur-md border-b border-gold-start/20"
           >
             <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
               {navLinks.map((link) => (
