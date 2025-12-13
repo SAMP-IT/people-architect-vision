@@ -19,23 +19,26 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    setIsMobileMenuOpen(false);
-
     // If not on home page, navigate to home first
     if (location.pathname !== "/") {
+      setIsMobileMenuOpen(false);
       navigate("/");
       // Wait for navigation to complete, then scroll
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
-      }, 100);
+      }, 300);
     } else {
-      // Already on home page, just scroll
+      // Already on home page, close menu and scroll
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        setIsMobileMenuOpen(false);
+        // Small delay to let menu close animation complete
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
       }
     }
   };
