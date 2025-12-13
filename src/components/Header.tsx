@@ -94,8 +94,10 @@ const Header = () => {
             />
           </motion.div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Hidden when scrolled */}
+          <nav className={`hidden md:flex items-center space-x-8 transition-all duration-300 ${
+            isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}>
             {navLinks.map((link, index) => (
               <motion.button
                 key={link.id}
@@ -111,8 +113,10 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA + Social Icons - Desktop */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* CTA + Social Icons - Desktop - Hidden when scrolled */}
+          <div className={`hidden md:flex items-center space-x-4 transition-all duration-300 ${
+            isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}>
             <Button
               onClick={handleGetQuote}
               size="sm"
@@ -142,10 +146,12 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Hamburger Menu Button - Shows on desktop when scrolled, always on mobile */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-foreground hover:text-gold-start transition-colors"
+            className={`text-foreground hover:text-gold-start transition-all duration-300 ${
+              isScrolled ? "md:block" : "md:hidden"
+            }`}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
