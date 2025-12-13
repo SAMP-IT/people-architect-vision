@@ -19,27 +19,40 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
+    setIsMobileMenuOpen(false);
+
     // If not on home page, navigate to home first
     if (location.pathname !== "/") {
-      setIsMobileMenuOpen(false);
       navigate("/");
-      // Wait for navigation to complete, then scroll
+      // Wait for navigation and render to complete
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
+          const headerOffset = 100; // Account for fixed header
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
         }
       }, 300);
     } else {
-      // Already on home page, close menu and scroll
-      const element = document.getElementById(id);
-      if (element) {
-        setIsMobileMenuOpen(false);
-        // Small delay to let menu close animation complete
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100);
-      }
+      // Already on home page, scroll immediately
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const headerOffset = 100; // Account for fixed header
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 100);
     }
   };
 
